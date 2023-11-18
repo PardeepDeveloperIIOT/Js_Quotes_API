@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray-color: rgb(167, 163, 163);
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    max-width: 700px;
+    width: 100%;
+    background-color: rgb(224, 220, 220);
+    border-radius: 20px;
+    border: 3px solid rgb(0, 255, 0);
+}
+
+.quotes-heading {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: rgba(255,0,0,0.5);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px; */
+}
+
+.quotes-heading h1 {
+    text-transform: capitalize;
+    color: rgb(63, 63, 65);
+    animation: deep 1s ease infinite;
+    text-shadow: 10px 10px 10px gray;
+}
+
+@keyframes deep {
+    from {
+        color: red;
+    }
+
+    to {
+        color: rgb(63, 63, 65);
+    }
+}
+
+.quotes-heading div {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(224, 220, 220);
+    border-radius: 50%;
+    border-left: 18px solid black;
+    border-right: 18px solid red;
+    border-top: 2px dashed red;
+    border-bottom: 2px dashed black;
+}
+
+.quotes-heading .rotate {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(224, 220, 220);
+    border-radius: 50%;
+    border-left: 18px solid black;
+    border-right: 18px solid red;
+    border-top: 2px dashed red;
+    border-bottom: 2px dashed black;
+    animation: pardeep 3s linear infinite;
+
+}
+
+@keyframes pardeep {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.quotes-heading .rotate h1 {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    padding: 7px;
+    animation: rotateColor 1s ease-in-out infinite alternate;
+}
+
+@keyframes rotateColor {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: rgb(224, 220, 220);
+    }
+}
+
+.quotes-section .quotes-heading {
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid gray;
+}
+
+.quotes-section .quotes-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 280px;
+    color: rgb(245, 25, 0);
+    font-size: 2rem;
+}
+
+.quotes-section .quotes-text p:nth-child(1) {
+    font-style: italic;
+    text-shadow: 5px 5px 10px red;
+    font-weight: bold;
+}
+
+.quotes-section .quotes-text p:nth-child(2) {
+    align-self: flex-end;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.random-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+
+.random-btn button {
+    width: 150px;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 255, 0);
+    font-style: italic;
+    color: rgb(229, 227, 227);
+    background-color: #333;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.random-btn button:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(255, 0, 0);
+
+}
